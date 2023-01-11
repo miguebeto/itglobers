@@ -1,0 +1,41 @@
+.login {
+  background: var(--light-blue);
+}
+
+.login > div {
+  width: auto;
+}
+
+.password {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+}
+
+.input {
+  width: 90%;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .login > div {
+    width: 30rem;
+  }
+  .input {
+    width: 93%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .login > div {
+    width: 40rem;
+  }
+  .input {
+    width: 94%;
+  }
+}

@@ -1,0 +1,35 @@
+.containerApp {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #21232a;
+}
+
+.presentation-card {
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 1.3rem;
+  width: min(300px, 100%);
+  aspect-ratio: 16/9;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.presentation-card img {
+  width: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 600px) {
+  .presentation-card {
+    width: min(500px, 100%);
+  }
+}

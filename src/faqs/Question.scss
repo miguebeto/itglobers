@@ -1,0 +1,38 @@
+.question { 
+  border: 1px solid var(--light-blue);
+  width: 80%;
+  max-width: 60rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 2rem auto;
+}
+
+.question-icon {
+ border: 1 px solid var(--color-grey);
+ height: 3rem;
+ width: 3rem;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+}
+
+.question-answer p {
+  animation: slide-down ease .5s;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 600px){
+  .question-title {
+    flex-direction: row;
+  }
+} 
